@@ -1,13 +1,13 @@
 body {
   font-family: 'Dosis', sans-serif;
-  background: radial-gradient(rgb(255,255,255), rgb(200,200,200));
-  ;
+  background-color: rgb(24, 24, 26);
 }
 
 h1 {
   font-weight: 400;
   font-size: 5rem;
   text-align: center;
+  color: rgb(220, 220, 220);
 }
 
 .container {
@@ -25,39 +25,40 @@ h1 {
 }
 
 .button {
-  border-style: solid;
-  border-width: 2px;
-  padding: 8px;
+  padding: 12px 16px;
   text-decoration: none;
   height: max-content;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+  background-color: rgb(220, 220, 220);
 }
 
 .button:hover {
-  background-color: rgb(225,225,225);
-  box-shadow: 0px 0px 15px 5px rgb(190, 190, 190);
+  box-shadow: 0px 0px 10px 3px rgb(220, 220, 220);
 }
 
 .button:not(:first-child) {
   margin-left: 20px;
 }
 
-.button.github {
-  border-color: rgb(36,41,46);
-  color: rgb(36,41,46);
+.button.linkedin {
+  color: rgb(10,102,194);
 }
 
-.button.linkedin {
-  border-color: rgb(10,102,194);
-  color: rgb(10,102,194);
+.button.github {
+  color: rgb(36,41,46);
 }
 
 .button>* {
   vertical-align: middle;
   font-weight: 700;
   font-size: 2rem;
+}
+
+.button>img {
+  margin-right: 4px;
+  height: 42px;
+  width: 42px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -72,7 +73,7 @@ h1 {
 
   .button:not(:first-child) {
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   .button>span {
