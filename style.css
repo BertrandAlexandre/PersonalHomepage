@@ -10,6 +10,10 @@ h1 {
   color: rgb(220, 220, 220);
 }
 
+h1:hover {
+  text-shadow: 0px 0px 10px rgb(220, 220, 220);
+}
+
 .container {
   margin-top: 50vh !important;
   transform: translateY(-70%);
@@ -29,7 +33,6 @@ h1 {
   text-decoration: none;
   height: max-content;
   display: inline-block;
-  transition: all 0.3s ease-in-out;
   background-color: rgb(220, 220, 220);
 }
 
@@ -64,6 +67,7 @@ h1 {
 @media only screen and (max-width: 700px) {
   h1 {
     font-size: 3rem;
+    font-weight: bold;
   }
 
   .button {
